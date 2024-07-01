@@ -1,11 +1,6 @@
 #tentang {
+    background-color: #ECECEC;
     color: #439297;
-}
-
-.divider {
-    margin-top: 10px;
-    width: 10%;
-    border : 1px solid #439297;
 }
 
 .banner {
@@ -31,4 +26,23 @@
 .deskripsi-content {
     display: grid;
     justify-content: top;
+}
+
+.baca-deskripsi {
+    padding: 7px;
+    border-radius: 15px;
+    background-color: white;
+    color: #439297;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 100%;
+    }
+
+    .container-content{
+        display: inline;
+        align-items: center;
+        justify-items: start;
+    }
 }

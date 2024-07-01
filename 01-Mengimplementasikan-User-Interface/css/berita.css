@@ -1,0 +1,48 @@
+#berita {
+    background-color: #ECECEC;
+    color: #439297;
+}
+
+.container-berita {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.berita-utama {
+    width: 50%;
+    padding: 25px;
+    text-wrap: balance;
+}
+
+.gambar-berita{
+    width: 100%;
+}
+
+.list-berita{
+    width: 50%;
+}
+
+.baca-berita {
+    padding: 7px;
+    border-radius: 15px;
+    background-color: white;
+    color: #439297;
+}
+
+.baca-berita:hover {
+    background-color: #439297;
+    color:white;
+}
+
+@media screen and (max-width: 768px) {
+    .container-berita {
+        display: grid;
+    }
+
+    .berita-utama {
+        width: auto;
+        padding: 25px;
+        text-wrap: balance;
+    }
+}

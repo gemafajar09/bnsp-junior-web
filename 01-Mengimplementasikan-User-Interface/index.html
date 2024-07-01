@@ -5,9 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mengimplementasikan User Interface</title>
     <!-- import style css -->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="beranda.css">
-	<link rel="stylesheet" href="tentang.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/beranda.css">
+	<link rel="stylesheet" href="css/tentang.css">
+	<link rel="stylesheet" href="css/kegiatan.css">
+	<link rel="stylesheet" href="css/berita.css">
+	<link rel="stylesheet" href="css/kontak.css">
 </head>
 <body>
     <!-- navbar -->
@@ -35,7 +38,7 @@
     <!-- content -->
     <div class="main" id="beranda">
         <div class="content-image">
-            <img src="./gambar1.jpg" alt="">
+            <img src="img/gambar1.jpg" alt="">
         </div>
         <div class="content-title">
             <div class="title-atas">MEDIATAMA ACADEMY</div>
@@ -44,23 +47,25 @@
             <div class="deskripi-beranda">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem, laboriosam ad nesciunt fuga magnam inventore velit enim dolore esse! Architecto veritatis magnam facere a saepe ratione quasi exercitationem nesciunt.
             </div>
+
         </div>
     </div>
 
     <div class="main" id="tentang">
         <center>
             <h2>Tentang Kami</h2>
-            <div class="divider"></div>
+            <div class="divider-green"></div>
         </center>
 
         <div class="main-content">
             <div class="container-content">
-                <img class="banner" src="./school3.jpg" alt="">
+                <img class="banner" src="img/school3.jpg" alt="">
 
                 <div class="deskripsi-content">
                     <h2>Mediatama Academy</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde quidem delectus cumque quam, ullam consectetur atque ea accusamus reprehenderit voluptate ipsa accusantium dolorem similique voluptatibus quos recusandae numquam! Inventore!</p>
                 </div>
+                <a href="" class="baca-deskripsi">Selengkapnya</a>
             </div>
         </div>
     </div>
@@ -68,13 +73,49 @@
     <div class="main" id="kegiatan">
         <center>
             <h2>Kegiatan</h2>
+            <div class="divider-white"></div>
         </center>
+
+        <div class="list-wrapper">
+            <ul class="list">
+                <li class="item"><div class="content">Item 1</div></li>
+                <li class="item"><div class="content">Item 2</div></li>
+                <li class="item"><div class="content">Item 3</div></li>
+                <li class="item"><div class="content">Item 4</div></li>
+                <li class="item"><div class="content">Item 5</div></li>
+            </ul>
+            <button onclick="handleClick('previous')" class="button button-previous" type="button">➜</button>
+            <button onclick="handleClick('next')" class="button button-next" type="button">➜</button>
+        </div>
     </div>
 
     <div class="main" id="berita">
         <center>
             <h2>Berita</h2>
+            <div class="divider-green"></div>
         </center>
+
+        <div class="container-berita">
+            <div class="berita-utama">
+                <img class="gambar-berita" src="img/school3.jpg" alt="">
+
+                <h2>Title Sekolah</h2>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis cum placeat illo nemo in sed fugiat ea numquam repellat, reprehenderit iure id vel quibusdam deleniti eligendi ducimus saepe provident?</p>
+
+                <a href="" class="baca-berita">Selengkapnya</a>
+            </div>
+
+            <div class="list-berita">
+                <ul>
+                    <li>Berita 1</li>
+                    <li>Berita 1</li>
+                    <li>Berita 1</li>
+                    <li>Berita 1</li>
+                    <li>Berita 1</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="main" id="kontak">
@@ -85,7 +126,7 @@
     <!-- /content -->
     
     <!-- import script javascript -->
-	<script src="action.js"></script>
+	<script src="js/action.js"></script>
  
 </body>
 </html>
