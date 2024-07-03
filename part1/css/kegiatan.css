@@ -17,9 +17,12 @@
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
 }
 
 .item {
@@ -29,10 +32,6 @@
     border-radius: 15px;
     background-color: #cacaca;
     scroll-snap-align: center;
-}
-
-.list::-webkit-scrollbar {
-    display: none;
 }
 
 .content {

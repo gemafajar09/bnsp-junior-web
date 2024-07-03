@@ -4,6 +4,14 @@
     font-family: Roboto, sans-serif;
 }
 
+.content-image img{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    width: 25%;
+    border-radius: 100px;
+}
+
 .content-title {
     position: absolute;
     top: 40%;
@@ -35,13 +43,6 @@
     color: white;
 }
 
-.content-image img{
-    position: absolute;
-    right: 10%;
-    top: 25%;
-    width: 25%;
-    border-radius: 100px;
-}
 
 @media screen and (max-width: 768px) {
 	.content-title {

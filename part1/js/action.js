@@ -6,6 +6,7 @@ tombol.addEventListener('click', () => {
 })
 
 // slider
+
 const list = document.querySelector(".list");
 const item = document.querySelector(".item");
 
