@@ -32,7 +32,6 @@ input{
 
 .pesan{
     display: flex;
-    flex-direction: column;
     margin-top: 18px;
 }
 

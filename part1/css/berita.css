@@ -43,6 +43,7 @@
 
 .baca-berita {
     padding: 7px;
+    text-decoration: none;
     border-radius: 15px;
     background-color: white;
     color: #439297;
@@ -50,6 +51,7 @@
 
 .baca-berita:hover {
     background-color: #439297;
+    text-decoration: none;
     color:white;
 }
 
