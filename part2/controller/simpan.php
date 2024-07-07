@@ -10,12 +10,14 @@
         $simpan = $con->query("INSERT INTO tb_kontak (nama, email, pesan) VALUE ('$nama','$email', '$pesan')");
 
         if($simpan){
+            Database::disconect();
             echo "<script>
                 alert(`Berhasil`)
                 window.location='../index.php'
                 </script>";
-            }else{
-                echo "<script>
+        }else{
+            Database::disconect();
+            echo "<script>
                 alert(`Berhasil`)
                 window.location='../index.php'
             </script>";
