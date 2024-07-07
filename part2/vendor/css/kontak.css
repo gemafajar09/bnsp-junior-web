@@ -1,0 +1,63 @@
+#kontak {
+    z-index: 1;
+    background-color: #439297;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.align-center{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    color: black;
+    border-radius: 15px;
+    padding: 30px;
+}
+.input-data{
+    width: auto;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.pesan{
+    display: flex;
+    margin-top: 18px;
+}
+
+textarea{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.list-data{
+    width: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 20%;
+    background-color: #439297;
+    color: white;
+}

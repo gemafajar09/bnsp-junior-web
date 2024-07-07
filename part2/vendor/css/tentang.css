@@ -1,0 +1,51 @@
+#tentang {
+    background-color: #ECECEC;
+    color: #439297;
+}
+
+.main-content{
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.container-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    gap: 90px;
+    justify-items: start;
+}
+
+.deskripsi-content {
+    display: grid;
+    justify-content: top;
+}
+
+.banner {
+    width: 50%;
+}
+
+.baca-deskripsi {
+    padding: 7px;
+    width: 20%;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: #439297;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 100%;
+    }
+
+    .container-content{
+        display: inline;
+        align-items: center;
+        justify-items: start;
+    }
+}
