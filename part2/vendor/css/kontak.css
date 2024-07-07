@@ -24,7 +24,9 @@
 .input-data{
     width: auto;
 }
-input{
+
+.input{
+    border: 1px solid black;
     width: 100%;
     padding: 15px;
     border-radius: 15px;
@@ -35,7 +37,8 @@ input{
     margin-top: 18px;
 }
 
-textarea{
+.textarea{
+    border: 1px solid black;
     margin-top: 10px;
     width: 100%;
     padding: 10px;
@@ -54,7 +57,8 @@ textarea{
     justify-content: end;
 }
 
-button{
+.button-style{
+    cursor: pointer;
     padding: 10px;
     border-radius: 15px;
     width: 20%;

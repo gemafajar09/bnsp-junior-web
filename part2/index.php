@@ -142,22 +142,25 @@
 
         <div class="align-center">
             <div class="card">
-                <div class="list-data">
-                    
-                    <input type="text" placeholder="Masukan Nama">
-                    <input type="text" placeholder="Masukan Email">
-                </div>
-                <div class="pesan">
-                    <textarea class="textarea" placeholder="Masukan Pesan"></textarea>
-                </div>
-                <div class="btn-box">
-                    <button type="button">Kirim</button>
-                </div>
+                <form action="controller/simpan.php" method="post">
+                    <div class="list-data">
+                        <input type="text" name="nama" class="input" placeholder="Masukan Nama">
+                        <input type="email" name="email" class="input" placeholder="Masukan Email">
+                    </div>
+                    <div class="pesan">
+                        <textarea class="textarea" name="pesan" placeholder="Masukan Pesan"></textarea>
+                    </div>
+                    <div class="btn-box">
+                        <button class="button-style" name="simpan" type="submit">Kirim</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
     <!-- kontak -->
     <!-- /content -->
+
+    <!-- bisini logic -->
     
     <!-- import script javascript -->
 	<script src="vendor/js/action.js"></script>

@@ -1,16 +1,16 @@
 <?php
 
 class Database {
-    private static $dbHost = "localhost";
-    private static $dbUsername = "root";
-    private static $dbPassword = "";
-    private static $dbName = "db_sekolah";
+    private static $host = "localhost";
+    private static $user = "root";
+    private static $pass = "";
+    private static $database = "db_sekolah";
 
     private static $connect = null;
 
     public function __construct()
     {
-        die("Fungsi ini tidak di izinkan");
+        die("Tidak Mendapatkan Akses");
     }
 
     public static function connect()
@@ -18,7 +18,7 @@ class Database {
         if( null == self::$connect)
         {
             try {
-                self::$connect = new mysqli(self::$dbHost, self::$dbUsername, self::$dbPassword, self::$dbName);
+                self::$connect = new mysqli(self::$host, self::$user, self::$pass, self::$database);
             } catch (Throwable $e) {
                 die($e->getMessage());
             }
