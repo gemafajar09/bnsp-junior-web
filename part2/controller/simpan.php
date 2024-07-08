@@ -1,11 +1,13 @@
 <?php
     require "koneksi.php";
+    require "mail.php";
+    
     $con = Database::connect();
 
-    if(isset($_POST['simpan'])){
-        $nama = $_POST['nama'];
-        $email = $_POST['email'];
-        $pesan = $_POST['pesan'];
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $nama = htmlspecialchars($_POST['nama']);
+        $email = htmlspecialchars($_POST['email']);
+        $pesan = htmlspecialchars($_POST['pesan']);
 
         $simpan = $con->query("INSERT INTO tb_kontak (nama, email, pesan) VALUE ('$nama','$email', '$pesan')");
 
