@@ -15,7 +15,7 @@ class Database {
 
     public static function connect()
     {
-        if( null == self::$connect)
+        if(null == self::$connect)
         {
             try {
                 self::$connect = new mysqli(self::$host, self::$user, self::$pass, self::$database);

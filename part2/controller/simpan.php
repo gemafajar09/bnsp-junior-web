@@ -20,7 +20,7 @@
         }else{
             Database::disconect();
             echo "<script>
-                alert(`Berhasil`)
+                alert(`Gagal`)
                 window.location='../index.php'
             </script>";
         }
