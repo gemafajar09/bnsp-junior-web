@@ -5,23 +5,13 @@
     $con = Database::connect();
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $nama = htmlspecialchars($_POST['nama']);
-        $email = htmlspecialchars($_POST['email']);
-        $pesan = htmlspecialchars($_POST['pesan']);
+        $nama = $_POST['nama'];
+        $email = $_POST['email'];
+        $pesan = $_POST['pesan'];
 
         $simpan = $con->query("INSERT INTO tb_kontak (nama, email, pesan) VALUE ('$nama','$email', '$pesan')");
 
-        if($simpan){
-            Database::disconect();
-            echo "<script>
-                alert(`Berhasil`)
-                window.location='../index.php'
-                </script>";
-        }else{
-            Database::disconect();
-            echo "<script>
-                alert(`Gagal`)
-                window.location='../index.php'
-            </script>";
-        }
+        Mailer::KirimEmail($nama, 'noreply@yahoo.com',$email,'pesan','pesan baru sudag datang');
+
+        echo json_encode($simpan);
     }
