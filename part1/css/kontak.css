@@ -27,6 +27,7 @@
 input{
     width: 100%;
     padding: 15px;
+    border: 1px solid gray;
     border-radius: 15px;
 }
 
@@ -60,4 +61,5 @@ button{
     width: 20%;
     background-color: #439297;
     color: white;
+    border: 1px solid gray;
 }
